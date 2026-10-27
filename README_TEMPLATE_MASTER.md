@@ -542,6 +542,26 @@ All release notes and breaking changes are tracked in the [CHANGELOG.md](CHANGEL
 
 ---
 
+## 📊 GitHub Stats & Metrics
+
+<div align="center">
+
+<a href="https://github.com/USERNAME">
+  <img src="https://github-readme-stats.vercel.app/api?username=USERNAME&show_icons=true&theme=tokyonight&hide_border=false&count_private=true" alt="USERNAME's GitHub Stats" />
+</a>
+
+<a href="https://github.com/USERNAME">
+  <img src="https://streak-stats.demolab.com/?user=USERNAME&theme=tokyonight&hide_border=false" alt="USERNAME's GitHub Streak" />
+</a>
+
+<a href="https://github.com/USERNAME">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=USERNAME&layout=compact&theme=tokyonight&hide_border=false" alt="USERNAME's Most Used Languages" />
+</a>
+
+</div>
+
+---
+
 ## 📄 License & Acknowledgments
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for complete details.

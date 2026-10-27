@@ -50,10 +50,19 @@ export interface BenchmarkRow {
   memory: string;
 }
 
+export interface ScreenshotItem {
+  id: string;
+  title: string;
+  url: string;
+  description: string;
+  type: 'desktop' | 'mobile' | 'terminal' | 'gif';
+}
+
 export interface SectionToggles {
   header: boolean;
   tableOfContents: boolean;
   overview: boolean;
+  screenshots: boolean;
   features: boolean;
   architecture: boolean;
   directoryStructure: boolean;
@@ -70,7 +79,17 @@ export interface SectionToggles {
   security: boolean;
   faq: boolean;
   roadmap: boolean;
+  githubStats: boolean;
   license: boolean;
+}
+
+export interface GitHubStatsConfig {
+  username: string;
+  theme: 'tokyonight' | 'radical' | 'dracula' | 'dark' | 'gruvbox' | 'github_dark' | 'nord';
+  showStreak: boolean;
+  showTopLangs: boolean;
+  showTrophies: boolean;
+  compact: boolean;
 }
 
 export interface ProjectConfig {
@@ -84,6 +103,9 @@ export interface ProjectConfig {
   category: ProjectCategory;
   license: LicenseType;
   primaryLanguages: SupportedLanguage[];
+  readmeLanguage: 'pt' | 'en';
+  screenshotLayout: 'grid' | 'single' | 'side-by-side';
+  screenshots: ScreenshotItem[];
   badges: {
     ci: boolean;
     release: boolean;
@@ -100,6 +122,7 @@ export interface ProjectConfig {
   apiEndpoints: ApiEndpoint[];
   benchmarks: BenchmarkRow[];
   sections: SectionToggles;
+  githubStats: GitHubStatsConfig;
 }
 
 export interface SnippetBlock {

@@ -1,6 +1,6 @@
 {
-  "name": "DocuForge - Universal GitHub README Studio",
-  "description": "Exhaustive modular GitHub README generator and AI prompt template with multi-language code snippets, architecture flow, and production-grade sections.",
+  "name": "DocuForge - Estúdio de README para GitHub & IAs",
+  "description": "Gerador modular exaustivo de README para GitHub e templates para IA com suporte a múltiplas linguagens, capturas de tela e blocos prontos.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

@@ -13,6 +13,29 @@ export const MODULAR_SNIPPETS: SnippetBlock[] = [
 [![Discord](https://img.shields.io/discord/123456789?style=for-the-badge&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/your-server)`,
   },
   {
+    id: 'github-stats-pack',
+    title: 'GitHub Stats & Streak Widgets',
+    category: 'Stats & Social Proof',
+    description: 'Dynamic GitHub summary cards showing stars, commits, PRs, streak count, and language share.',
+    markdown: `## 📊 GitHub Stats & Metrics
+
+<div align="center">
+
+<a href="https://github.com/{{GITHUB_USER}}">
+  <img src="https://github-readme-stats.vercel.app/api?username={{GITHUB_USER}}&show_icons=true&theme=tokyonight&hide_border=false&count_private=true" alt="GitHub Stats" />
+</a>
+
+<a href="https://github.com/{{GITHUB_USER}}">
+  <img src="https://streak-stats.demolab.com/?user={{GITHUB_USER}}&theme=tokyonight&hide_border=false" alt="GitHub Streak" />
+</a>
+
+<a href="https://github.com/{{GITHUB_USER}}">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username={{GITHUB_USER}}&layout=compact&theme=tokyonight&hide_border=false" alt="Top Languages" />
+</a>
+
+</div>`,
+  },
+  {
     id: 'architecture-mermaid',
     title: 'Mermaid Architecture Diagram',
     category: 'Architecture',

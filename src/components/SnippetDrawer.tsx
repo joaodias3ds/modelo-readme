@@ -13,17 +13,17 @@ export const SnippetDrawer: React.FC<SnippetDrawerProps> = ({
   onClose,
 }) => {
   const [search, setSearch] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [selectedCategory, setSelectedCategory] = useState<string>('Todos');
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
   if (!isOpen) return null;
 
-  const categories = ['All', ...Array.from(new Set(MODULAR_SNIPPETS.map(s => s.category)))];
+  const categories = ['Todos', ...Array.from(new Set(MODULAR_SNIPPETS.map(s => s.category)))];
 
   const filtered = MODULAR_SNIPPETS.filter(s => {
     const matchesSearch = s.title.toLowerCase().includes(search.toLowerCase()) || 
                           s.description.toLowerCase().includes(search.toLowerCase());
-    const matchesCat = selectedCategory === 'All' || s.category === selectedCategory;
+    const matchesCat = selectedCategory === 'Todos' || s.category === selectedCategory;
     return matchesSearch && matchesCat;
   });
 

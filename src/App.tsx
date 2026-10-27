@@ -130,7 +130,7 @@ export default function App() {
                 }`}
               >
                 <Eye className="w-3.5 h-3.5" />
-                Visual GitHub Preview
+                Prévia Visual (GitHub)
               </button>
 
               <button
@@ -143,7 +143,7 @@ export default function App() {
                 }`}
               >
                 <Code className="w-3.5 h-3.5" />
-                Raw Markdown Code
+                Código Markdown Bruto
               </button>
 
               <button
@@ -156,21 +156,21 @@ export default function App() {
                 }`}
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-                AI Master Blueprint
+                Prompt Mestre para IA
               </button>
             </div>
 
-            {/* Quick Metadata & Theme Controls */}
+            {/* Controles de Tema e Ações Rápidas */}
             <div className="flex items-center gap-3">
-              {/* Active Languages Indicator */}
+              {/* Indicador de Linguagens */}
               <div className="hidden lg:flex items-center gap-1.5 text-xs text-slate-400">
-                <span className="font-semibold text-slate-300">Polyglot Stack:</span>
+                <span className="font-semibold text-slate-300">Stack Poliglota:</span>
                 <span className="text-slate-400">
                   {config.primaryLanguages.map(l => l.toUpperCase()).join(' · ')}
                 </span>
               </div>
 
-              {/* GitHub Preview Theme Toggle */}
+              {/* Alternador de Tema GitHub */}
               {activeTab === 'preview' && (
                 <button
                   type="button"
@@ -181,18 +181,18 @@ export default function App() {
                   {theme === 'dark' ? (
                     <>
                       <Sun className="w-3.5 h-3.5 text-amber-400" />
-                      <span>Light Theme</span>
+                      <span>Tema Claro</span>
                     </>
                   ) : (
                     <>
                       <Moon className="w-3.5 h-3.5 text-blue-400" />
-                      <span>Dark Theme</span>
+                      <span>Tema Escuro</span>
                     </>
                   )}
                 </button>
               )}
 
-              {/* Snippet Drawer Trigger */}
+              {/* Botão de Snippets */}
               <button
                 type="button"
                 onClick={() => setIsSnippetDrawerOpen(true)}

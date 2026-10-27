@@ -18,7 +18,7 @@ export const RawMarkdownView: React.FC<RawMarkdownViewProps> = ({
     <div className="relative rounded-lg border border-slate-800 bg-[#0d1117] text-slate-300 font-mono text-xs overflow-hidden flex flex-col shadow-inner">
       <div className="flex items-center justify-between px-4 py-2 border-b border-slate-800 bg-slate-950/80">
         <span className="text-[11px] text-slate-400 font-sans">
-          README.md ({lines.length} lines · {new Blob([markdown]).size} bytes)
+          README.md ({lines.length} linhas · {new Blob([markdown]).size} bytes)
         </span>
         <button
           onClick={onCopy}
